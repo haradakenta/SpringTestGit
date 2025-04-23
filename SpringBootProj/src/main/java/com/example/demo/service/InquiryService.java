@@ -13,17 +13,17 @@ public class InquiryService {
  *@param dataForm
  *@return 
  */
- public Boolean doInquiryEntry(InquiryFormViewModel dataForm)
+ public Boolean doInquiryEntry(InquiryForm dataForm)
  {
  
 //追加コード
 //受付日時の生成・設定
-DataTimeFormatter dtf = DataTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-dataForm.setRecdt(dtf.format(LocalDatetime.now()));
+//DataTimeFormatter dtf = DataTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+//dataForm.setRecdt(dtf.format(LocalDatetime.now()));
 
 //受付番号の生成・設定
-DataTimeFormatter dtNo = DataTimeFormatter.ofPattern("yyyyMMddHHmmss");
-dataForm.setRecno("NO" + dtNo.format(LocalDatetime.now()));
+//DataTimeFormatter dtNo = DataTimeFormatter.ofPattern("yyyyMMddHHmmss");
+//dataForm.setRecno("NO" + dtNo.format(LocalDatetime.now()));
 
 	 
  //登録チェック
