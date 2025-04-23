@@ -1,40 +1,38 @@
 package com.example.demo.model;
 
-public class InquiryForm {
+import lombok.Data;
+
+@Data
+public class InquiryForm{
+	
+/**
+ * 受付日時
+ */
+private String recdt;
+
+/**
+ * 受付番号
+ */
+private String recno;
+
+/**
+ * 名前
+ */
 private String name;
+
+/**
+ * メールアドレス
+ */
 private String mail;
-private int age;
+
+/**
+ * 年齢
+ */
+private Integer age;
+
+/**
+ * 性別
+ */
 private String gender;
-
-public void setName(String name) {
-this.name = name;
-}
-
-public void setMail(String mail) {
-this.mail = mail;
-}
-
-public void setAge(int age) {
-this.age = age;
-}
-
-public void setGender(String gender) {
-this.gender = gender;
-}
-
-public String getName() {
-return this.name;
-}
-
-public String getMail() {
-return this.mail;
-}
-
-public int getAge() {
-return this.age;
-}
-public String getGender() {
-return this.gender;
-}
 
 }

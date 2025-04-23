@@ -6,6 +6,10 @@
 </head>
     <body>
         <div th:object="${dataForm}">
+        入力を受け付けました。
+        <div th:text = "'受付日時：' + *{name}"><br></div>
+        <div th:text = "'受付番号：' + *{name}"><br></div>
+
         <div th:text = "'お名前：' + *{name}"><br></div>
         <div th:text = "'メールアドレス：' + *{mail}"><br></div>
         <div th:text = "'ご年齢：' + *{age}"><br></div>
